@@ -46,3 +46,10 @@ missionlist = [
 "Manning National Zoo",
 ]
 print(random.choice(missionlist))
+for i in missionlist:
+    print("reroll? y/n")
+    x = input()
+    if x == "y":
+        print(random.choice(missionlist))
+    elif x == "n":
+        break
